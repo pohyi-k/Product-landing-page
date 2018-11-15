@@ -1,0 +1,168 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+header {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    grid-auto-rows: auto;
+    display: grid;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+}
+
+.logo {
+    grid-column: 1/2;
+    display: flex;
+}
+
+.logo p {
+    font-size: 30px;
+}
+
+#header-img {
+    align-self: center;
+    size: 50px;
+    padding-right: 10px;
+    
+}
+
+#nav-bar {
+    grid-column: 4/6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+form {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    align-self: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#email {
+    align-self: center;
+    margin: 10px;
+    width: 200px;
+}
+
+#start {
+    align-self: center;
+    margin: 10px;
+    width: auto;
+}
+
+#features {
+    grid-column: 2/5;
+    grid-row: 3/6;
+}
+
+.materials {
+    display: flex;
+}
+
+.shipping {
+    display: flex;
+}
+
+.assurance {
+    display: flex;
+}
+
+.right {
+    margin-left: 100px;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.fa-toolbox {
+    align-self: center;
+    width: 50px;
+}
+
+.fa-truck {
+    align-self: center;
+    width: 50px;
+}
+
+.fa-battery-full {
+    align-self: center;
+    width: 50px;
+}
+
+#demo {
+    grid-column: 2/5;
+    grid-row: 6/7;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+#pricing {
+    grid-column: 2/5;
+    grid-row: 7/8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    padding: 20px;
+    font-size: 30px;
+}
+
+footer {
+    grid-column: 1/6;
+    grid-row: 8/9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.copyright {
+    justify-items: flex-start;
+}
+
+input[type=submit] {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    color: green;
+    cursor: pointer;
+}

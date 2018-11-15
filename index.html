@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Violin<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,56 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FCC: Product Landing Page </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header id="header">
         <div class="logo">
-            <svg id="header-img" width="24" height="24" viewBox="0 0 24 24">
-  <path d="M4,3H20A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3M4,5V19H8V13H6.75V5H4M9,19H15V13H13.75V5H10.25V13H9V19M16,19H20V5H17.25V13H16V19Z"></path>
-</svg>
-            <p>Original Pianos</p>
+            <img id="header-img" src="https://images.unsplash.com/photo-1492563817904-5f1dc687974f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=0a7dc8567ee40b0b7c3ce006e999fd7d" alt="piano" width="50" height="40"> 
+            <p>Original Violins</p>
         </div>
         <nav id="nav-bar">
-            <div class="nav-link">
-                <a href="#features">
+
+                <a class="nav-link" href="#features">
                     Features
                 </a>
-            </div>
-            <div class="nav-link">
-                <a href="">
+
+   
+                <a class="nav-link" href="#demo">
                     How It Works
                 </a>
-            </div>
-            <div class="nav-link">
-                <a href="">
+
+
+                <a class="nav-link" href="#pricing">
                     Pricing
                 </a>
-            </div>
+
         </nav>
     </header>
-    <form>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label for="email">Handcrafted, home-made masterpieces</label>
-        <input type="email" id="email" placeholder="Enter your email address" required>
-        <input type="submit" value="Get Started">
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+        <input type="submit" id="submit" value="Get Started">
     </form>
-    <section class="features" id="features">
+    <section id="features">
         <div class="materials">
-            <i class="fas fa-toolbox"></i>
-            <h3>Premium Materials</h3>
+            <i class="fas fa-toolbox fa-4x"></i>
+            <div class="right">
+                <h3>Premium Materials</h3>
                 <h4>Our violins uses premium materials</h4>
+            </div>
         </div>
         <div class="shipping">
-                <i class="fas fa-truck"></i>
-                <h3>Fast Shipping</h3>
+                <i class="fas fa-truck fa-4x"></i>
+                <div class="right">
+                    <h3>Fast Shipping</h3>
                     <h4>We make sure you recieve your violin as soon as we have finished making it. We also provide free returns if you are not satisfied.</h4>
+                </div>
         </div>
         <div class="assurance">
-                <i class="fas fa-battery-full"></i>
-                <h3>Quality Assurance</h3>
+                <i class="fas fa-battery-full fa-4x"></i>
+                <div class="right">
+                    <h3>Quality Assurance</h3>
                     <h4>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</h4>
+                </div> 
         </div>
     </section>
+    <section id="demo">
+        <iframe id="video" width="500" height="300" src="https://www.youtube.com/embed/wh-pBxeHE3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+        <div class="box">
+            <h3>Violin 1</h3>
+            <p>$600</p>
+            <input type="submit" value="Select">
+        </div>
+        <div class="box">
+            <h3>Violin 2</h3>
+            <p>$900</p>
+            <input type="submit" value="Select">
+        </div>
+        <div class="box">
+            <h3>Violin 3</h3>
+            <p>$1200</p>
+            <input type="submit" value="Select">
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p class="copyright">Copyright 2018, Original Violins</p>
+    </footer>
 </body>
 </html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
